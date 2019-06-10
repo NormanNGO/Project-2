@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/test.css" type="text/css" />
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+<h2 style="text-align: center;">Stock Management System</h2>
+  <div class="menu">
+    <?php if(!isset($_SESSION['login'])) {?>
+    <a class="active" href="loginPage.php">Login</a>
+    <?php } ?>
+    <a href="#">Contact Us</a>
+    <a href="#">User Manual </a>
+  </div>
+<form action="" style="margin-top:100px;" method="post">
+    <div class="login">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+     <div style="background-color:#f1f1f1">
+    <span class="psw">Forgot <a href="setPassword.php">password?</a></span>
+  </div>
+
+    <button type="submit" name="login" value="login">Login</button>
+	  <button type="reset" class="cancelbtn">Reset</button>
+  </div>
+  <div style="background-color:#f1f1f1; text-align: center;">
+    <span class="psw">Do not have an account? <a href="register.php">Register Here</a></span>
+  </div>
+</form>
+
+</body>
+</html>

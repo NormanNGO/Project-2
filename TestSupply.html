@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/test.css" type="text/css" />
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+<h2 style="text-align: center;">Stock Management System</h2>
+  <div class="menu">
+
+    <a href="TestIndex.html">Home</a>
+
+    <a href="TestEditItem.html">Edit Item</a>
+    <a class="active" href="#">Supply </a>
+    <a href="TestMigration.html">Migrate Data</a>
+    <a href="TestInbox.html">Inbox</a>
+  </div>
+
+
+  <form action="#" style="width: 60%" id="list" method="post">
+      <table>
+    <tr>
+      <th>Supply ID</th>
+      <th>Supply Name</th>
+      <th>Email</th>
+  	  <th>Address</th>
+      <th>Postcode</th>
+  	  <th>Phone Number</th>
+      <th>Category</th>
+      <th>Status</th>
+      <th>Select</th>
+    </tr>
+    <tr>
+
+      <td>S001</td>
+      <td>Drinkable Supply</td>
+      <td>Drinkable@gmail.com</td>
+      <td>50 Wesminter Street</td>
+      <td>2244</td>
+      <td>(02)90900922</td>
+      <td>Wine</td>
+      <td>3</td>
+      <td><input type="checkbox" name="order-status" value="Y/N"></td>
+    </tr>
+    <tr>
+
+      <td>S002</td>
+      <td>Beer Kingdom LTD PTY</td>
+      <td>Beerkingdom@gmail.com</td>
+      <td>2 Kent Street</td>
+      <td>2123</td>
+      <td>(02)87640000</td>
+      <td>Beer</td>
+      <td>1</td>
+      <td><input type="checkbox" name="order-status" value="Y/N"></td>
+    </tr>
+    <tr>
+
+      <td>S003</td>
+      <td>Cocolala Wine Supply</td>
+      <td>abcm@gmail.com</td>
+      <td>999 Denison avenue</td>
+      <td>2463</td>
+      <td>(02)6047474</td>
+      <td>Wine</td>
+      <td>1</td>
+      <td><input type="checkbox" name="order-status" value="Y/N"></td>
+    </tr>
+    <tr>
+
+      <td>S004</td>
+      <td>Soft Drink Kingdom LTD PTY</td>
+      <td>softdrinkingdom@gmail.com</td>
+      <td>4 StJohn Street</td>
+      <td>2423</td>
+      <td>(02)8595959</td>
+      <td>Soft Drink</td>
+      <td>1</td>
+      <td><input type="checkbox" name="order-status" value="Y/N"></td>
+    </tr>
+
+  </table>
+  </form>
+
+  <form action="" style="width: 80%; display:none;" id="edit" method="post">
+      <label for="pid"><b>Product ID</b></label>
+      <input type="text" placeholder="Enter Product ID" name="pid" required>
+
+      <label for="pname"><b>Product Name</b></label>
+      <input type="text" placeholder="Enter pname" name="pname" required>
+
+      <label for="maxlevel"><b>Max Level</b></label>
+      <input type="text" placeholder="Enter Max Level" name="maxlevel" required>
+
+      <label for="minlevel"><b>Max Level</b></label>
+      <input type="text" placeholder="Enter Min Level" name="minlevel" required>
+
+      <label for="currentStock"><b>Current Stock</b></label>
+      <input type="text" placeholder="Enter Current Stock" name="currentStock" required>
+
+      <label for="category"><b>Category</b></label>
+      <input type="text" placeholder="Enter Category" name="category" required>
+
+      <label for="sid"><b>Supplier ID</b></label>
+      <input type="text" placeholder="Enter Supplier ID" name="sid" required>
+
+      <button type="submit" name="change" value="change">Submit Change</button>
+  	<button type="reset" class="cancelbtn">Reset</button>
+  </form>
+
+  <form class="button-set" method="post">
+      <button type="submit" name="add" value="add">Add Supply</button>
+      <button type="submit" name="add" value="add">Edit Supply</button>
+      <button style="background-color: yellow; color:Red;" type="submit" name="add" value="add">Remove Supply</button>
+  	  <button type="reset" class="cancelbtn">Exit</button>
+  </form>
+
+
+
+</body>
+</html>
